@@ -10,9 +10,15 @@ const app = express();
 connectDB();
 
 // app.use(cors());
-app.options('*', cors()); // Enable preflight across-the-board for all routes
+// app.options('*', cors()); // Enable preflight across-the-board for all routes
+// app.use(cors({
+//   origin: 'https://saurabh-works.vercel.app', // Allow requests from this origin
+//   methods: ["POST", "GET", "DELETE", "PUT"],
+//   credentials: true
+// }));
+
 app.use(cors({
-  origin: 'https://saurabh-works.vercel.app', // Allow requests from this origin
+  origin: '*', // Temporarily allow all origins
   methods: ["POST", "GET", "DELETE", "PUT"],
   credentials: true
 }));
