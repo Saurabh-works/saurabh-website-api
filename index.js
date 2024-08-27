@@ -11,7 +11,7 @@ connectDB();
 
 // app.use(cors());
 app.use(cors({
-  origin: 'saurabhwebsite-saurabh-shindes-projects-8bfbf2c6.vercel.app', // Allow requests from this origin
+  origin: 'https://saurabh-works.vercel.app', // Allow requests from this origin
   methods: ["POST", "GET", "DELETE", "PUT"],
   credentials: true
 }));
